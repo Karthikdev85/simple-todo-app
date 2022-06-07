@@ -12,31 +12,32 @@ body {
     background-color: rgba(0, 136, 255, 0.164);
     font-family: Arial, Helvetica, sans-serif;
 }
-h1 {
+/* h1 {
     margin-bottom: 0.5rem;
-}
+} */
 
 .container {
     background-color: rgb(255, 255, 255);
-    border: 2px solid rgba(128, 128, 128, 0.551);
+    border: 2px solid rgba(128, 128, 128, 0.275);
     border-radius: 8px;
-    padding: 1rem;
+    padding: 1.5rem;
     margin-top: 6rem;
     margin-inline: auto;
-    width: max(45%,30rem);
+    width: max(45%,32rem);
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1.3rem;
+
 }
 
 .sub-header span {
     display: inline-block;
     font-size: 1.1rem;
     margin-right: 0.4rem;  
-    padding-bottom: 0.4rem;
 }
 
 #form {
