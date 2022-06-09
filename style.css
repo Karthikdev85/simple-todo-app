@@ -36,12 +36,19 @@ body {
 .home-page{
     cursor: pointer;
 }
+.home-page:hover {
+    color: rgb(255, 0, 0);
+}
 
 .sub-header span {
     display: inline-block;
-    font-size: 1.1rem;
-    margin-right: 0.6rem;  
+    font-size: 1.2rem;
+    margin-right: 0.3rem;  
     cursor: pointer;
+}
+.sub-header span:hover{
+    color: rgb(255, 0, 0);
+    text-decoration:underline;
 }
 
 #form {
