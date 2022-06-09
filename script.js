@@ -149,31 +149,21 @@ const usersLink = document.querySelector(".users-link");
 const usersList = document.querySelector("#users-list");
 usersList.classList.add("hidden");
 //
-let showHomePage = false;
-let showTodosPage = false;
-let showUsersPage = false;
+// let showHomePage = false;
+// let showTodosPage = false;
+// let showUsersPage = false;
 
 homeLink.addEventListener("click", () => {
-  showHomePage = !showHomePage;
-  if (showHomePage) {
-    formPage.classList.remove("hidden");
-    usersList.classList.add("hidden");
-    todoList.classList.add("hidden");
-    showTodosPage = false;
-    showUsersPage = false;
-  }
+  formPage.classList.remove("hidden");
+  usersList.classList.add("hidden");
+  todoList.classList.add("hidden");
 });
 
 todoLink.addEventListener("click", () => {
-  showTodosPage = !showTodosPage;
-  if (showTodosPage) {
-    formPage.classList.add("hidden");
-    todoList.classList.remove("hidden");
-    usersList.classList.add("hidden");
-    renderTodoItems(todos);
-    showHomePage = false;
-    showUsersPage = false;
-  }
+  formPage.classList.add("hidden");
+  todoList.classList.remove("hidden");
+  usersList.classList.add("hidden");
+  renderTodoItems(todos);
 });
 
 function renderTodoItems(todos) {
@@ -188,15 +178,10 @@ function renderTodoItems(todos) {
 //
 
 usersLink.addEventListener("click", () => {
-  showUsersPage = !showUsersPage;
-  if (showUsersPage) {
-    usersList.classList.remove("hidden");
-    todoList.classList.add("hidden");
-    formPage.classList.add("hidden");
-    renderUserPage();
-    showHomePage = false;
-    showTodosPage = false;
-  }
+  usersList.classList.remove("hidden");
+  todoList.classList.add("hidden");
+  formPage.classList.add("hidden");
+  renderUserPage();
 });
 
 async function renderUserPage() {
