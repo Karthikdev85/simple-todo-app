@@ -11,22 +11,26 @@
   <body>
     <div class="container">
       <div class="header">
-        <h1>Hello To-Do</h1>
+        <h1 class="home-page">To-Do</h1>
         <div class="sub-header">
-          <span>To-do</span>
-          <span>Users</span>
+          <span class="todo-page">To-do</span>
+          <span class="users-page">Users</span>
         </div>
       </div>
-      <form id="form">
-        <input type="text" placeholder="Add to-do item" id="input" />
-        <button type="submit">Add Item</button>
-      </form>
-      <ul id="list">
-        <!-- <div data-list>
-          <li>asfasdfaf</li>
-          <button class="delete">Delete</button>
-        </div> -->
-      </ul>
+      <div class="form-page">
+        <form id="form">
+          <input type="text" placeholder="Add to-do item" id="input" />
+          <button type="submit">Add Item</button>
+        </form>
+        <ul id="list">
+          <!-- <li data-list>
+            <p>asfasdfaf</p>
+            <button class="delete">Delete</button>
+          </li> -->
+        </ul>
+      </div>
+      <ul id="todo-list"></ul>
+      <ul id="users-list"></ul>
     </div>
   </body>
 </html>
