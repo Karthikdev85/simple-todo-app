@@ -145,9 +145,9 @@ const todoList = document.querySelector("#todo-list");
 todoList.classList.add("hidden");
 
 //
+const usersPage = document.querySelector(".users-page");
 const usersList = document.querySelector("#users-list");
 usersList.classList.add("hidden");
-const usersPage = document.querySelector(".users-page");
 //
 let showHomePage = false;
 let showTodosPage = false;
@@ -157,7 +157,7 @@ homePage.addEventListener("click", () => {
   showHomePage = !showHomePage;
   if (showHomePage) {
     formPage.classList.remove("hidden");
-    todoPage.classList.add("hidden");
+    usersList.classList.add("hidden");
     todoList.classList.add("hidden");
     showTodosPage = false;
     showUsersPage = false;
@@ -165,16 +165,6 @@ homePage.addEventListener("click", () => {
 });
 
 todoPage.addEventListener("click", () => {
-  // formPage.classList.add("hidden");
-  // showTodosPage = !showTodosPage;
-  // if (showTodosPage) {
-  //   todoList.classList.remove("hidden");
-  //   usersList.classList.add("hidden");
-  //   renderTodoItems(todos);
-  // } else {
-  //   todoList.classList.add("hidden");
-  //   formPage.classList.remove("hidden");
-  // }
   showTodosPage = !showTodosPage;
   if (showTodosPage) {
     formPage.classList.add("hidden");
@@ -198,17 +188,6 @@ function renderTodoItems(todos) {
 //
 
 usersPage.addEventListener("click", () => {
-  // showUsersPage = !showUsersPage;
-  // if (showUsersPage) {
-  //   todoList.classList.add("hidden");
-  //   formPage.classList.add("hidden");
-  //   usersList.classList.remove("hidden");
-  //   renderUserPage();
-  // } else {
-  //   usersList.classList.add("hidden");
-  //   formPage.classList.remove("hidden");
-  //   todoList.classList.add("hidden");
-  // }
   showUsersPage = !showUsersPage;
   if (showUsersPage) {
     usersList.classList.remove("hidden");
