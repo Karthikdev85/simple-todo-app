@@ -136,16 +136,16 @@ function deleteTodo(id) {
 }
 
 //
-const homePage = document.querySelector(".home-page");
+const homeLink = document.querySelector(".home-link");
 
 //
-const todoPage = document.querySelector(".todo-page");
+const todoLink = document.querySelector(".todo-link");
 const formPage = document.querySelector(".form-page");
 const todoList = document.querySelector("#todo-list");
 todoList.classList.add("hidden");
 
 //
-const usersPage = document.querySelector(".users-page");
+const usersLink = document.querySelector(".users-link");
 const usersList = document.querySelector("#users-list");
 usersList.classList.add("hidden");
 //
@@ -153,7 +153,7 @@ let showHomePage = false;
 let showTodosPage = false;
 let showUsersPage = false;
 
-homePage.addEventListener("click", () => {
+homeLink.addEventListener("click", () => {
   showHomePage = !showHomePage;
   if (showHomePage) {
     formPage.classList.remove("hidden");
@@ -164,7 +164,7 @@ homePage.addEventListener("click", () => {
   }
 });
 
-todoPage.addEventListener("click", () => {
+todoLink.addEventListener("click", () => {
   showTodosPage = !showTodosPage;
   if (showTodosPage) {
     formPage.classList.add("hidden");
@@ -187,7 +187,7 @@ function renderTodoItems(todos) {
 
 //
 
-usersPage.addEventListener("click", () => {
+usersLink.addEventListener("click", () => {
   showUsersPage = !showUsersPage;
   if (showUsersPage) {
     usersList.classList.remove("hidden");
